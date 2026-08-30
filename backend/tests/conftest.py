@@ -20,12 +20,24 @@ def event_loop():
     loop.close()
 
 @pytest_asyncio.fixture(autouse=True)
-def reset_redis_emulator():
+async def reset_redis_emulator():
     redis_service._memory_zsets.clear()
     redis_service._memory_store.clear()
+    if not redis_service.client:
+        await redis_service.connect()
+    if redis_service.client:
+        try:
+            await redis_service.client.flushdb()
+        except Exception:
+            pass
     yield
     redis_service._memory_zsets.clear()
     redis_service._memory_store.clear()
+    if redis_service.client:
+        try:
+            await redis_service.client.flushdb()
+        except Exception:
+            pass
 
 @pytest_asyncio.fixture
 async def test_engine():

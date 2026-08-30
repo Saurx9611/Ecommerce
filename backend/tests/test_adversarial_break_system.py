@@ -104,6 +104,11 @@ async def test_adversarial_stale_cache_recovery_on_cache_miss(client: AsyncClien
     key = f"product:{prod_id}:stock"
     if key in redis_service._memory_store:
         del redis_service._memory_store[key]
+    if redis_service.client:
+        try:
+            await redis_service.client.delete(key)
+        except Exception:
+            pass
 
     # Attempt checkout on un-cached product
     idem_key = f"key-cold-{uuid.uuid4()}"
