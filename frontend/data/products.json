@@ -1,0 +1,74 @@
+[
+  {
+    "id": 101,
+    "title": "boAt Airdopes 141 TWS Earbuds",
+    "description": "True Wireless Earbuds with 42H Playtime, Beast Mode for Gaming, ENx Tech, and Type-C charging.",
+    "price": 1799,
+    "stock": 120,
+    "category": "Electronics",
+    "image": "https://picsum.photos/seed/101/400/400"
+  },
+  {
+    "id": 102,
+    "title": "OnePlus 32-inch Y Series Smart Android TV",
+    "description": "HD Ready LED Smart Android TV with Bezel-less design and Dolby Audio.",
+    "price": 10999,
+    "stock": 45,
+    "category": "Electronics",
+    "image": "https://picsum.photos/seed/102/400/400"
+  },
+  {
+    "id": 103,
+    "title": "Mi 10000mAH Power Bank 3i",
+    "description": "18W Fast Power Delivery, dual input ports, and 12-layer advanced circuit protection.",
+    "price": 1299,
+    "stock": 350,
+    "category": "Electronics",
+    "image": "https://picsum.photos/seed/103/400/400"
+  },
+  {
+    "id": 201,
+    "title": "Levi's Men's 511 Slim Fit Jeans",
+    "description": "Classic slim-fit denim jeans made from stretchable cotton blend.",
+    "price": 2499,
+    "stock": 80,
+    "category": "Clothing",
+    "image": "https://picsum.photos/seed/201/400/400"
+  },
+  {
+    "id": 202,
+    "title": "Biba Women's Cotton Printed Kurta Set",
+    "description": "Elegant straight fit printed handloom kurta with matching palazzo.",
+    "price": 1999,
+    "stock": 60,
+    "category": "Clothing",
+    "image": "https://picsum.photos/seed/202/400/400"
+  },
+  {
+    "id": 203,
+    "title": "The Souled Store Oversized T-Shirt",
+    "description": "Premium oversized baggy streetwear t-shirt with drop shoulders.",
+    "price": 899,
+    "stock": 200,
+    "category": "Clothing",
+    "image": "https://picsum.photos/seed/203/400/400"
+  },
+  {
+    "id": 301,
+    "title": "Pigeon Amaze Plus Electric Kettle",
+    "description": "1.5 Liter electric kettle with stainless steel body and auto-shutoff.",
+    "price": 649,
+    "stock": 500,
+    "category": "Home & Kitchen",
+    "image": "https://picsum.photos/seed/301/400/400"
+  },
+  {
+    "id": 302,
+    "title": "Milton Thermosteel Flip Lid Flask",
+    "description": "1000ml vacuum insulated stainless steel water bottle.",
+    "price": 950,
+    "stock": 150,
+    "category": "Home & Kitchen",
+    "image": "https://picsum.photos/seed/302/400/400"
+  }
+]

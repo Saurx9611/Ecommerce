@@ -1,0 +1,32 @@
+[project]
+name = "ecommerce-backend"
+version = "0.1.0"
+description = "High-concurrency e-commerce flash sale platform"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "sqlalchemy[asyncio]>=2.0.30",
+    "asyncpg>=0.29.0",
+    "redis>=5.0.0",
+    "pydantic-settings>=2.2.0",
+    "locust>=2.24.0",
+    "httpx>=0.27.0",
+    "pyjwt>=2.13.0",
+    "passlib[bcrypt]>=1.7.4",
+    "python-multipart>=0.0.32",
+    "pydantic[email]>=2.13.4",
+    "pgvector>=0.3.0",
+    "alembic>=1.13.0",
+    "aiofiles>=24.0.0",
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "prometheus-client>=0.26.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+asyncio_mode = "auto"
+
+

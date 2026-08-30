@@ -1,0 +1,151 @@
+# =============================================================================
+# EQUINOX — PRODUCTION REPOSITORY .gitignore
+# Platform: High-Concurrency E-Commerce & Flash Sale Platform
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# 1. Environment & Secrets
+# -----------------------------------------------------------------------------
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Explicitly track example environment templates
+!.env.example
+!frontend/.env.example
+
+# Cryptographic keys, certificates, and private credentials
+*.pem
+*.key
+*.crt
+*.pfx
+*.p12
+*.secret
+id_rsa
+id_ecdsa
+id_ed25519
+
+# -----------------------------------------------------------------------------
+# 2. Python / FastAPI Backend & Virtual Environments
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments (uv, venv, poetry)
+.venv/
+venv/
+ENV/
+env/
+.uv/
+
+# Linters and type checkers caches
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+dmypy.json
+
+# -----------------------------------------------------------------------------
+# 3. Node.js & Next.js 15 Frontend
+# -----------------------------------------------------------------------------
+node_modules/
+.next/
+out/
+.vercel/
+
+# Package manager debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# -----------------------------------------------------------------------------
+# 4. Testing, Coverage & Benchmarking Artifacts
+# -----------------------------------------------------------------------------
+.pytest_cache/
+.coverage
+.coverage.*
+coverage/
+htmlcov/
+.hypothesis/
+.locust/
+
+# -----------------------------------------------------------------------------
+# 5. Database & Cache Local Artifacts
+# -----------------------------------------------------------------------------
+# Local SQLite/development database files
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Redis local persistence dumps
+dump.rdb
+appendonly.aof
+
+# Docker mounted volume directories (if mapped locally)
+postgres_data/
+redis_data/
+postgres_prod_data/
+redis_prod_data/
+storage_prod_data/
+
+# -----------------------------------------------------------------------------
+# 6. Local Storage & Uploads
+# -----------------------------------------------------------------------------
+backend/storage/audio/*
+!backend/storage/audio/.gitkeep
+backend/storage/uploads/*
+!backend/storage/uploads/.gitkeep
+
+# -----------------------------------------------------------------------------
+# 7. Logs & Temporary Files
+# -----------------------------------------------------------------------------
+*.log
+logs/
+tmp/
+temp/
+
+# -----------------------------------------------------------------------------
+# 8. IDE / Editors & Tooling
+# -----------------------------------------------------------------------------
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+
+# VS Code (preserve shared project configs if added)
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+
+# -----------------------------------------------------------------------------
+# 9. Operating System Artifacts
+# -----------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini

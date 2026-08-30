@@ -1,0 +1,6 @@
+{
+  "name": "SaaSCommerce",
+  "description": "An e-commerce UI adapting a SaaS incident management aesthetic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
