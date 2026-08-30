@@ -71,7 +71,6 @@ jobs:
 
       - name: Security Check (Bandit)
         run: |
-          uv run python -m pip install bandit
           uv run bandit -r app -ll
 
   # ===========================================================================
