@@ -441,4 +441,4 @@ docker compose -f docker-compose.prod.yml up --build -d
 
 ## 17. License
 
-This project is licensed under the **MIT License**.
+This project is licensed under **Saurav Shekhar**.
